@@ -1,0 +1,322 @@
+main {
+  min-height: 90vh;
+}
+
+/* .left-sidebar {
+  background-color: black;
+  width: 15vw;
+  height: 90vh;
+} */
+
+.sidebar-top img {
+  width: 50px;
+}
+
+.sidebar-top h3 {
+  color: white;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.left-sidebar div {
+  color: #282828;
+  font-size: 0.7rem;
+}
+
+.left-sidebar > div:not(.sidebar-top) {
+  padding: 0.5rem;
+}
+
+.left-sidebar > div:not(.sidebar-top) div {
+  padding: 0.4rem;
+  color: white;
+}
+
+.sidebar-second-block,
+.sidebar-third-block {
+  font-weight: 600;
+}
+
+.left-sidebar i {
+  font-size: 1rem;
+}
+
+.sidebar-bottom i {
+  font-size: 0.9rem;
+}
+
+.sidebar-second-block .slidebar-selected {
+  background-color: black;
+  border-radius: 3px;
+  color: white;
+}
+
+.search {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+h3 {
+  color: azure;
+  font-weight: 700;
+}
+
+.fa-magnifying-glass {
+  color: white;
+}
+.spotify-logo {
+  background-color: white;
+}
+
+/* body */
+.card-text,
+.card-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 120px;
+  min-width: 120px;
+}
+
+.card1 h5.card-title {
+  color: azure;
+}
+
+.card {
+  transition: all 0.2s ease-in-out;
+}
+
+.second-card-row {
+  max-width: 150px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: #434444;
+  cursor: pointer;
+}
+
+.container-fluid {
+  background: rgb(0, 0, 0);
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 60%, rgb(82, 9, 9) 100%); */
+}
+
+.fa-circle-chevron-left {
+  font-size: 2rem;
+  color: #171818;
+}
+
+.fa-circle-chevron-right {
+  font-size: 2rem;
+  opacity: 0.7;
+  color: #171818;
+}
+
+p {
+  color: darkgray;
+}
+
+.see {
+  color: darkgrey;
+  font-weight: 700;
+}
+
+.card {
+  background: #171818;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card1 {
+  background-color: #434444;
+  background: rgba(17, 18, 18, 0.555);
+}
+
+.button {
+  height: 32px;
+  width: 160px;
+  background: #171818;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 600;
+}
+
+.fa-caret-down {
+  font-size: 1rem;
+}
+
+#img5 {
+  height: 80px;
+  width: 80px;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  opacity: 1;
+}
+
+/* footer */
+.footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: #171818;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-icon1 {
+  color: aliceblue;
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+.footer-icon2 {
+  color: aliceblue;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.play {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.play:hover {
+  color: darkgreen;
+  cursor: pointer;
+}
+
+.footer-play-bar {
+  height: 6%;
+  width: 35vw;
+
+  border-radius: 100px;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+.footer-stop {
+  height: 6px;
+  width: 200px;
+  background-color: #171818;
+  border: 1px solid aliceblue;
+  border-radius: 100px;
+}
+
+.number-play {
+  color: aliceblue;
+}
+
+.volume {
+  height: 0.6vh;
+  width: 5vw;
+  background-color: aliceblue;
+  border-radius: 100px;
+}
+
+.middle-div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 576px) {
+  body h1 {
+    color: yellow !important;
+  }
+
+  .left-sidebar,
+  .artist-page-bottom-right,
+  .artist-page-bottom-left td:nth-child(5),
+  .right-div,
+  .heart-grid-icon,
+  .number-play {
+    display: none !important;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .img-footer img {
+    height: 30px !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  body h1 {
+    color: tomato !important;
+  }
+
+  .artist-page-bottom-left td:nth-child(2) {
+    width: 10%;
+  }
+
+  .sidebar-bottom {
+    white-space: wrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+  }
+
+  #veryright {
+    flex-direction: row !important;
+  }
+
+  .left-sidebar > div:not(.sidebar-second-block),
+  .right-div,
+  .footer-icon1,
+  .text-footer p {
+    display: none !important;
+  }
+
+  .sidebar-second-block {
+    margin-top: 2rem;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .left-sidebar {
+    width: 30vw;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 23vw;
+    height: 35vh;
+  }
+
+  body {
+    background-color: #171818;
+  }
+
+  .middle-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-stop {
+    width: 22px;
+  }
+
+  .footer-play-bar {
+    width: 13vw;
+  }
+
+  .img-footer img {
+    height: 100px !important;
+    margin: auto;
+  }
+
+  .text-footer {
+    text-align: center;
+  }
+}
