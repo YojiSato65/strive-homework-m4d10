@@ -1,18 +1,22 @@
+import { Link } from 'react-router-dom'
 import '../css/home.css'
+import '../css/navbar_footer.css'
 
 const MyNavbar = () => {
   return (
     <div className="container left-sidebar">
-      <div className="sidebar-top py-3">
-        <div>
-          <img
-            src="http://cdn.onlinewebfonts.com/svg/img_24445.png"
-            alt="spotify logo"
-            className="spotify-logo"
-          />
-          <h3 className="d-inline-block">Spotify</h3>
+      <Link to="/">
+        <div className="sidebar-top py-3">
+          <div>
+            <img
+              src="http://cdn.onlinewebfonts.com/svg/img_24445.png"
+              alt="spotify logo"
+              className="spotify-logo"
+            />
+            <h3 className="d-inline-block">Spotify</h3>
+          </div>
         </div>
-      </div>
+      </Link>
       <div className="sidebar-second-block">
         <div className="slidebar-selected">
           <i className="fa-solid fa-house mr-2"></i>

@@ -1,19 +1,20 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MyNavbar from './components/MyNavbar'
 import Home from './components/Home'
-// import Artist from './components/Artist'
-// import Album from './components/Album'
-// import Footer from './components/Footer'
+import ArtistPage from './components/ArtistPage'
+import AlbumPage from './components/AlbumPage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App()
 {
   return (
-    <>
-      <Home />
-      {/* <Artist />
-      <Album /> */}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={< Home />} />
+        <Route path='https://striveschool-api.herokuapp.com/api/deezer/album/:albumId' element={<AlbumPage />}></Route>
+        <Route path='https://striveschool-api.herokuapp.com/api/deezer/artist/:artistId' element={< ArtistPage />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
